@@ -10,8 +10,14 @@ load_dotenv()
 
 # Establish a connection to the PostgreSQL database using a connection URL
 con = psycopg2.connect(os.getenv("DATABASE_URL"))
+print("DATABASE_URL:", postgres://postgres.gspmtolpopcvnimaipie:1209225633Lujy@aws-0-us-west-1.pooler.supabase.com:5432/postgres)
 cur = con.cursor()
-
+try:
+    # Connect to the database
+    con = psycopg2.connect(database_url)
+    print("Connected successfully!")
+except Exception as e:
+    print("Failed to connect to the database:", e)
 # Create a new table named 'prompts' if it does not already exist
 cur.execute("""
 CREATE TABLE IF NOT EXISTS prompts (
