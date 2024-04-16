@@ -1,5 +1,5 @@
-# 🐧 Penguin Explorer
-
+# 🤖 ChatGPT Prompts
+https://sp14-techin510-lab3-paengqqzvvhecm4rutfwhg.streamlit.app/
 ## Getting Started
 
 ```
@@ -17,8 +17,10 @@ streamlit run app.py
 - Using `sidebar` and `expander`
 
 ## Questions
-- Still not familiar enough with creating diagram
-- How to make columns in different position on the web page
+- Hard to connect to Supabase database
+```
+psycopg2.OperationalError: connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "junyanlu" does not exist
+```
 
 ## TODO
-- Keep learning
+- Solve problems which relate SQL
